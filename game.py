@@ -16,10 +16,10 @@ class Game:
         self.col_player = col_player
 
     def apply_move(self, row_player_action, col_player_action):
-        row_player_payoff = self.payoff_matrix[self.ROW][row_player_action][
-            col_player_action]
-        col_player_payoff = self.payoff_matrix[self.COL][row_player_action][
-            col_player_action]
+        row_player_payoff = self.payoff_matrix[
+            self.ROW][row_player_action][col_player_action]
+        col_player_payoff = self.payoff_matrix[
+            self.COL][row_player_action][col_player_action]
         return row_player_payoff, col_player_payoff
 
     def tick(self):
@@ -37,4 +37,4 @@ class Game:
         self.row_player.record_history(row_action, col_action, row_payoff,
                                        col_payoff)
         self.col_player.record_history(row_action, col_action, row_payoff,
-        col_payoff)
+                                       col_payoff)
