@@ -36,3 +36,5 @@ class Game:
         self.col_scores.append(col_payoff)
         self.row_player.record_history(row_action, col_action, row_payoff,
                                        col_payoff)
+        self.col_player.record_history(row_action, col_action, row_payoff,
+        col_payoff)
