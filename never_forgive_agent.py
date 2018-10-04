@@ -2,7 +2,7 @@ from agent import Agent
 
 class NeverForgiveAgent(Agent):
     def __init__(self, player_type):
-        super(TitfortatAgent, self).__init__(player_type)
+        super(NeverForgiveAgent, self).__init__(player_type)
         self.punish = False
     
     def move(self):
